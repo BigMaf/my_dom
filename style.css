@@ -1,0 +1,46 @@
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .item .info {
+    flex-grow: 1;
+  }
+  .item .info h4 {
+    margin: 0;
+  }
+  .item .info .price {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .item .actions {
+    display: flex;
+    align-items: center;
+  }
+  .item .actions button {
+    margin: 0 5px;
+  }
+  .item .actions .heart {
+    color: red;
+    cursor: pointer;
+  }
+  .item .actions .heart.active {
+    color: pink;
+  }
+  .total {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    background-color: lightblue;
+  }

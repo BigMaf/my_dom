@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<title>MY CART</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h2>Shopping Cart</h2>
+  
+  <div class="cart">
+    <div class="item">
+      <img src="./buds.jpg" alt="Mafeng Buds">
+      <div class="info">
+        <h4>Mafeng Buds</h4>
+        <div class="price">$10.00</div>
+      </div>
+      <div class="actions">
+        <button onclick="decrementQuantity(1)">-</button>
+        <span id="quantity1">1</span>
+        <button onclick="incrementQuantity(1)">+</button>
+        <span class="heart" onclick="toggleLike(1)">&#x2661;</span>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="./left on seen.jpg" alt="Hosea Glass">
+      <div class="info">
+        <h4>Hosea Glass</h4>
+        <div class="price">$15.00</div>
+      </div>
+      <div class="actions">
+        <button onclick="decrementQuantity(2)">-</button>
+        <span id="quantity2">1</span>
+        <button onclick="incrementQuantity(2)">+</button>
+        <span class="heart" onclick="toggleLike(2)">&#x2661;</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="total">
+    Total: $<span id="totalPrice">25.00</span>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
